@@ -3,5 +3,57 @@
     position: fixed;
     top: 20px;
     right: 20px;
-
 }
+
+.search {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+  }
+  
+  .search input[type="text"] {
+    width: 500px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+  }
+
+  .search input[type="submit"]
+  {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: yellow;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+
+  .search input:hover {
+    background-color: #f1f1f1;
+  }
+  
+  button
+  {
+    border-radius: 15px;
+    cursor: pointer;
+
+  }
+  body {
+    height: 100vh;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    color: #333;
+  }
+
+  .dark-theme {
+    background-color: #333;
+    color: #f1f1f1;
+  }
+  
+  .dark-theme button {
+    background-color: #f1f1f1;
+    color: #333;
+  }

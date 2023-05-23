@@ -3,14 +3,16 @@
     <head>
         <title>Search</title>
         <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
     </head>
     <div class = "upper-right">
         <a href="Image.html">Image Search</a>
         <a href="advance.html">Advanced Search</a>
     </div>
     <body>
-        <form action="https://google.com/search">
-            <input type="text" name="q">
+        <button id="themeSwitchBtn" onclick="toggleTheme()">Switch Theme</button>
+        <form class ="search" action="https://google.com/search">
+            <input type="text" name="q" placeholder="Enter your search here">
             <input type="submit" value="Google Search">
         </form>
     </body>
