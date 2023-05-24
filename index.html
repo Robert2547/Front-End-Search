@@ -10,9 +10,17 @@
         <a href="advance.html">Advanced Search</a>
     </div>
     <body>
-        <button id="themeSwitchBtn" onclick="toggleTheme()">Switch Theme</button>
+        <div class="toggle-container">
+            <label class="switch">
+              <input type="checkbox" id="theme-toggle" onchange="toggleTheme()">
+              <span class="slider round"></span>
+            </label>
+            <span class="toggle-label">Dark Mode</span>
+        </div>
         <div class="search-form">
-            <img class="images-container" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo" />
+            <div class="images-container">
+                <img id="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo" />
+            </div>
             <form class ="search" action="https://google.com/search">
                 <input type="text" name="q" placeholder="Enter your search here">
             </form>

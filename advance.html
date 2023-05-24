@@ -8,7 +8,13 @@
     <script src="script.js"></script>
     <title>Advanced Search</title>
 </head>
-    <button id="themeSwitchBtn" onclick="toggleTheme()">Switch Theme</button>
+<div class="toggle-container">
+    <label class="switch">
+      <input type="checkbox" id="theme-toggle" onchange="toggleTheme()">
+      <span class="slider round"></span>
+    </label>
+    <span class="toggle-label">Dark Mode</span>
+</div>
     <div class="upper-right"> 
         <a href="index.html">Search</a>
         <a href="Image.html">Image Search</a>
